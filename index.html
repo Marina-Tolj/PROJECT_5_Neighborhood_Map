@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Neighborhood Map</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--<script src="https://maps.googleapis.com/maps/api/js"></script>-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1oIgp7ktxlzbXe2uHfenwR90KuObec0k&libraries=places&callback=initAutocomplete"
+         async defer></script>
+
+</head>
+<body>
+
+    <form id="form-container" class="form-container">
+        <label for="street">Street: </label><input type="text" id="street" value="">
+        <label for="city">City: </label><input type="text" id="city" value="">
+        <button id="submit-btn">Submit</button>
+    </form>
+
+    <hr>
+
+    <h2 id="greeting" class="greeting">Explore a Neighborhood!</h2>
+
+
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+
+    <div id="map"></div>
+
+
+    <div class="wikipedia-container">
+        <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>
+        <ul id="wikipedia-links">Type in an address above and find relevant Wikipedia articles here!</ul>
+    </div>
+
+
+    <div class="nytimes-container">
+        <h3 id="nytimes-header">New York Times Articles</h3>
+        <ul id="nytimes-articles" class="article-list">What's going on in your new city? Enter an address and hit submit and the NY Times will tell you here!</div>
+    </div>
+
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
